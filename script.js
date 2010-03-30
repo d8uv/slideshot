@@ -8,7 +8,7 @@ $(document).ready(function () {
     RIGHT = 1;
 
     //Initial Positioning
-    $("div").each(function () {
+    $("body > div").each(function () {
         $(this).show();
         $(this).offset({left: slidepos});
         slidepos += winwidth;
