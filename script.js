@@ -15,6 +15,7 @@ $(document).ready(function () {
     });
     slidepos = 0;
 
+
     function moveSlider(direction) {
         slidepos += direction * winwidth;
 

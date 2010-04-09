@@ -1,13 +1,14 @@
+/* The below, is the base CSS, that slideshot needs in order to function.*/
 body {
 overflow:hidden;
 }
 
-div {
+body > div {
 position:absolute;
 width:100%;
 height:100%;
 }
 
-div+div {
+body > div+div {
 display:none;
 }

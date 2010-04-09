@@ -1,20 +1,80 @@
 <!DOCTYPE html>
+
+<!-- Note, the source code is at http://github.com/d8uv/slideshot -->
+
 <link rel="stylesheet" href="http://yui.yahooapis.com/3.0.0/build/cssreset/reset-min.css">
 <link rel="stylesheet" href="style.css">
-<title>Slideshow</title>
+<title>Slideshot</title>
 
 <div>
-  <h1>The first slide</h1>
-  <p>Has paragraphs</p>
-  <ul>
-    <li>And</li>
-    <li>Also</li>
-    <li>Lists</li>
-  </ul>
+<h1>Slideshot</h1>
+<h2>The slideshow webapp for people who aren’t total fucking pussies.</h2>
+<p><small>(To nagivate slides, use the arrow keys, click the page, or scroll
+    horizontally. It probably works in some browsers. It may not work in other
+    browsers. By viewing this page, you hereby agree to the term and condition
+    that you won’t whine like a goddamn child if the latter turns out to be the
+    case)</small></p>
 </div>
 
 <div>
-<p>other slides have different content</p>
+<h1>Having your slideshow be HTML is kinda awesome.</h1>
+<p>For one, you can do neat shit, like embed youtube videos in the middle of
+  your damn presentation.</p>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/dQw4w9WgXcQ&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/dQw4w9WgXcQ&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<p>I wanna see your blessed little Keynote pull that shit off.</p>
+<p>Also, you can put your presentation on the internet and blah blah clouds
+  blah server blah cloud blah</p>
+</div>
+
+<div>
+<h1>Unless you <em>try</em> to make your slideshow be HTML</h1>
+<p>So, wanting to play with this stuff, I tried googling for all combinations
+  of “html”, “slideshow”, and “powerpoint”. Amongst the thousands of pages of
+  slideshows about html written in powerpoint, I
+  found <a href="http://meyerweb.com/eric/tools/s5/">S5</a>, <a href="http://www.w3.org/Talks/Tools/Slidy/">Slidy</a>,
+  and <a href="http://icant.co.uk/domslides/">DOMSlides</a>.</p>
+<p>The problem with those tools, is that… well, they’re too complicated. They
+  require you to memorize their specific microformats, because without those
+  special microformats, there’s no way for their scripts to do all the tricks
+  they can do, like automatically generate TOCs, do incremental slide reveals,
+  and show your progress in the ever-present chrome.</p>
+<p>Oh, yeah, I forgot. They also take space out of the presentation window, to
+  show UI. This is <strong>fucking insane</strong>. I will give some credit,
+  they do hide at least <em>some</em> of the chrome, but there’s always a
+  little widget thing that displays a whole bunch of egregious bullshit. When I
+  want to show some slides, the only thing I want to see are <em>slides</em>.</p>
+<div style="position:absolute;bottom:0;right:0">
+  Previous Slide | Slide 3 out of WHO GIVES A FUCK | Next Slide
+</div>
+</div>
+
+<div>
+<p>What I wanted was a tool, that took the simplest markup possible, and used a
+  script to just switch from slide to slide, without any UI.</p>
+<p>Unfortunately, I’m not as good at programming as the makers of the above
+  frameworks. So, sadly…</p>
+<h1>I'm stuck with Slideshot.</h1>
+</div>
+
+<div>
+<h1>So how does this crap work anyway?</h1>
+<p>It's pretty simple. Anything that matches the CSS selector of <code>body >
+  div</code> is a slide. And that's pretty much all the restraint I put on the
+  HTML or CSS. So that allows you to do largely anything you want to do,
+  without the slide framework getting in your way.</p>
+<p>As for everything else, it's less than 50 lines of poorly thought out
+  javascript and CSS. And you can see it all
+  at <a href="http://github.com/d8uv/slideshot">http://github.com/d8uv/slideshot</a></p>
+<p>Lord help you if you actually <em>try</em> to make sense, or even casually
+  use, any of my amaturish nonsense.</p>
+</div>
+
+<div>
+<h1>In conclusion:</h1>
+<p>So, yeah. That's the story of the slideshot. I wanted something, I found
+  that everything that existed was bad, so I made something <strong>inexplicably
+  worse</strong>.</p>
+<p>But it seems to work allright, so fuck it.</p>
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
