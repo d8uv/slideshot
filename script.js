@@ -15,15 +15,14 @@ $(document).ready(function () {
     });
     slidepos = 0;
 
-
     function moveSlider(direction) {
         slidepos += direction * winwidth;
 
-        if (slidepos < winwidth) {
+        if (slidepos < 0) {
             slidepos = 0;
         }
-        if (slidepos > winwidth) {
-            slidepos = winwidth;
+        if (slidepos > $(document).width() - winwidth) {
+            slidepos = $(document).width() - winwidth;
         }
 
         $(window).scrollLeft(slidepos);
