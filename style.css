@@ -12,3 +12,120 @@ height:100%;
 body > div+div {
 display:none;
 }
+
+
+/* Super-basic styling. */
+body > div {
+padding:3%;
+width:94%
+}
+
+h1 {
+font-size:2em;
+line-height:1.25em;
+padding-bottom:.25em;
+}
+
+h2 {
+font-size:1.25em;
+padding-bottom:.5em
+}
+
+h3, strong {
+font-weight:bold;
+}
+
+p, ul, ol, dl, pre, img, object {
+padding-bottom:1em;
+}
+
+a img {
+border:medium solid #00f;
+}
+
+ul li {
+list-style:disc outside;
+}
+
+ul ul li {
+list-style:circle;
+}
+
+ul ul ul li {
+list-style:square;
+}
+
+ol li {
+list-style:decimal outside;
+}
+
+ol ol li {
+list-style:lower-alpha;
+}
+
+ol ol ol li {
+list-style:lower-roman;
+}
+
+ul ul, ol ol, ul ol, ol ul, dd {
+margin-left:1.5em;
+padding:0;
+}
+
+blockquote {
+border-left:medium solid;
+padding-left:1.5em;
+margin-bottom:1em;
+}
+
+blockquote * {
+padding:0;
+}
+
+blockquote p+p {
+margin:0;
+text-indent:1.5em;
+}
+
+em {
+font-style:italic;
+}
+
+abbr,acronym
+{
+border-bottom:1px dotted #aaa;
+cursor:help;
+}
+
+small{
+font-size:.75em;
+}
+
+pre, code, tt, kbd, samp, var {
+font-family:Consolas, monospace;
+}
+
+/* Slideshow mode*/
+html {
+background:#000;
+color:#ddd;
+font:32px/48px "Helvetica Neue",Arial,sans-serif;
+}
+
+a {
+color:inherit;
+}
+
+em {
+color:#fff;
+}
+
+strong {
+color:#f22;
+font-weight:normal;
+font-style:italic;
+}
+
+body > div:first-child {
+text-align:center;
+}
