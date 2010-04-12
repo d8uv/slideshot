@@ -147,9 +147,9 @@ margin:-.5em 1em 0 0;
 }
 
 body > div:first-child p {
-font-family: 'Forelle';
+font:1.5em 'Forelle';
 line-height: 100%;
-padding:2em 5em;
+padding:2em;
 }
 
 .big {
