@@ -1,0 +1,26 @@
+@font-face {
+        font-family: 'Vegur';
+        src: url('vegurr_0.601.eot');
+        src: local('Vegur'), local('Vegur-Regular'), url('vegurr_0.601.woff') format('woff'), url('vegurr_0.601.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Vegur';
+        font-weight: 500;
+	src: url('vegurm_0.601.eot');
+	src: local('Vegur'), local('Vegur-Medium'), url('vegurm_0.601.woff') format('woff'), url('vegurm_0.601.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Vegur';
+        font-weight: bold;
+	src: url('vegurb_0.601.eot');
+	src: local('Vegur'), local('Vegur-Bold'), url('vegurb_0.601.woff') format('woff'), url('vegurb_0.601.ttf') format('truetype');
+}
+
+@font-face {
+        font-family: 'Forelle';
+        src: url('forelle.eot');
+        src: local('forelle'), url('forelle.woff') format('woff'), url('forelle.ttf') format('truetype');
+}
+
