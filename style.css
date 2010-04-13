@@ -1,3 +1,5 @@
+@import url(fonts/embed.css);
+
 /* The below, is the base CSS, that slideshot needs in order to function.*/
 body {
 overflow:hidden;
@@ -105,18 +107,39 @@ pre, code, tt, kbd, samp, var {
 font-family:Consolas, monospace;
 }
 
-/* Slideshow mode*/
+/* Slideshow mode, which you'll probably need to change. */
 html {
 background:#111;
 color:#ddd;
-font:32px/48px "Gillius No 2","Helvetica Neue",Arial,sans-serif;
+font:32px/48px "Vegur","Myriad Pro","Helvetica Neue",Arial,sans-serif;
 text-shadow:0 2px 4px #000;
+}
+
+body > div:first-child {
+text-align:center;
+}
+
+.big {
+font-size:96px;
+padding-top:1em;
+line-height:1em;
 }
 
 h1,h2 {
 color:#fff;
-font-family:"Vegur";
+font-weight:500;
 text-shadow:0 5px 10px #000;
+}
+
+body > div:first-child p {
+font:1.5em 'Forelle';
+line-height:100%;
+padding:2em;
+}
+
+object {
+float:left;
+margin:-.5em 1em 0 0;
 }
 
 a {
@@ -125,34 +148,14 @@ color:inherit;
 
 em {
 color:#fff;
+font-style:normal;
+font-weight:bold;
 }
 
 strong {
 color:#c00;
-font-weight:normal;
-font-style:italic;
-}
-
-body > div:first-child {
-text-align:center;
 }
 
 code {
-color:#8d8
-}
-
-object {
-float:left;
-margin:-.5em 1em 0 0;
-}
-
-body > div:first-child p {
-font:1.5em 'Forelle';
-line-height: 100%;
-padding:2em;
-}
-
-.big {
-font-size:96px;
-padding-top:1em;
+color:#8d8;
 }
