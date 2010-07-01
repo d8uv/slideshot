@@ -26,7 +26,7 @@ $(document).ready(function () {
             slidepos = $(document).width() - winwidth;
         }
 
-        $(window).scrollLeft(slidepos);
+        $("body").animate({scrollLeft: slidepos}, 250);
     }
 
 
