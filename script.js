@@ -17,23 +17,16 @@ $(document).ready(function () {
 
 
     function moveSlider(direction) {
-        var anim, destination;
-        destination = slidepos + direction * winwidth;
+        slidepos += direction * winwidth;
 
-        if (destination < 0) {
-            destination = 0;
+        if (slidepos < 0) {
+            slidepos = 0;
         }
-        if (destination > $(document).width() - winwidth) {
-            destination = $(document).width() - winwidth;
+        if (slidepos > $(document).width() - winwidth) {
+            slidepos = $(document).width() - winwidth;
         }
 
-        anim = setInterval(function () {
-            slidepos += direction;
-            $(window).scrollLeft(slidepos);
-            if (destination === slidepos) {
-                clearInterval(anim);
-            }
-        } , 1);
+        $("body").animate({scrollLeft: slidepos}, 250);
     }
 
 
